@@ -1,0 +1,115 @@
+body {
+    background: #000;
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Input Area */
+.input-box {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-align: left;
+    border: 1px solid #444;
+}
+
+textarea {
+    width: auto;
+    height: 80px;
+    background: #111;
+    color: white;
+    border: 1px solid #555;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+/* Connection Status Dot */
+#status {
+    width: 15px;
+    height: 15px;
+    background: red;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    box-shadow: 0 0 10px red;
+}
+
+.online {
+    background: #0f0 !important;
+    box-shadow: 0 0 10px #0f0 !important;
+}
+
+.upload-btn {
+    border: 2px solid #fff;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #007aff;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.upload-btn:disabled {
+    background: #444;
+    border-color: #555;
+    color: #888;
+    cursor: not-allowed;
+}
+
+#feed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 300px;
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    text-align: left;
+    animation: popIn 0.3s ease;
+}
+
+canvas {
+    width: 100%;
+    height: auto;
+    display: block;
+    background: #222;
+    margin-bottom: 10px;
+}
+
+.text-content {
+    padding: 10px;
+    font-size: 1.1em;
+    color: #eee;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.meta {
+    padding: 0 10px;
+    color: #777;
+    font-size: 0.7rem;
+}
+
+@keyframes popIn {
+    from {
+        transform: scale(0.9) opacity(0);
+    }
+
+    to {
+        transform: scale(1) opacity(1);
+    }
+}
