@@ -4,7 +4,7 @@ import Gun from 'gun';  // <--- This loads Gun from NPM
 
 // 2. CONFIGURATION
 const peers = [
-  'https://superrely.onrender.com/gun'
+  'https://superrely.neoverse.live/gun'
 ];
 
 const gun = Gun({ peers: peers });
